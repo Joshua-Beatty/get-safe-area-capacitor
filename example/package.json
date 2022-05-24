@@ -8,19 +8,18 @@
     "mobile"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx webpack"
   },
   "dependencies": {
-    "@capacitor/camera": "latest",
     "@capacitor/core": "latest",
-    "@capacitor/dialog": "^1.0.7",
     "@capacitor/splash-screen": "latest",
     "cap": "^0.2.1",
-    "get-safe-area-capacitor": "file:..",
-    "typescript": "^4.6.4"
+    "get-safe-area-capacitor": "file:.."
   },
   "devDependencies": {
-    "@capacitor/cli": "^3.5.1"
+    "@capacitor/cli": "^3.5.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
   },
   "author": "",
   "license": "ISC"

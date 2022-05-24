@@ -1,5 +1,5 @@
 console.log(1)
-const { GetSafeArea } = Capacitor.Plugins;
+import { GetSafeArea } from 'get-safe-area-capacitor'
 /*
 const showAlert = async () => {
   await Dialog.alert({
