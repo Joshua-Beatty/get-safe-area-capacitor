@@ -13,7 +13,7 @@ npx cap sync
 
 <docgen-index>
 
-* [`getSafeArea()`](#getSafeArea)
+* [`getSafeArea()`](#getsafearea)
 
 </docgen-index>
 
@@ -23,11 +23,10 @@ npx cap sync
 ### getSafeArea()
 
 ```typescript
-getSafeArea(): Promise<{ top: number, bottom: number, left: number, right: number }>;
+getSafeArea() => Promise<{ top: number; bottom: number; left: number; right: number; }>
 ```
 
-
-**Returns:** <code>Promise<{ top: number, bottom: number, left: number, right: number }>;</code>
+**Returns:** <code>Promise&lt;{ top: number; bottom: number; left: number; right: number; }&gt;</code>
 
 --------------------
 

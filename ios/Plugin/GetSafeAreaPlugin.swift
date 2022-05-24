@@ -10,8 +10,6 @@ public class GetSafeAreaPlugin: CAPPlugin {
     private let implementation = GetSafeArea()
 
     @objc func getSafeArea(_ call: CAPPluginCall) {
-        call.resolve([
-            "value": implementation.getSafeArea()
-        ])
+        call.resolve(implementation.getSafeArea())
     }
 }

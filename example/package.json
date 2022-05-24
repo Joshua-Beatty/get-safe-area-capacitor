@@ -11,13 +11,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@capacitor/core": "latest",
     "@capacitor/camera": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor/dialog": "^1.0.7",
     "@capacitor/splash-screen": "latest",
-    "get-safe-area-capacitor": "file:.."
+    "cap": "^0.2.1",
+    "get-safe-area-capacitor": "file:..",
+    "typescript": "^4.6.4"
   },
   "devDependencies": {
-    "@capacitor/cli": "latest"
+    "@capacitor/cli": "^3.5.1"
   },
   "author": "",
   "license": "ISC"
