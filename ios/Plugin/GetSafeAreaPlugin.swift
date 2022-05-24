@@ -9,10 +9,9 @@ import Capacitor
 public class GetSafeAreaPlugin: CAPPlugin {
     private let implementation = GetSafeArea()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func getSafeArea(_ call: CAPPluginCall) {
         call.resolve([
-            "value": implementation.echo(value)
+            "value": implementation.getSafeArea()
         ])
     }
 }
