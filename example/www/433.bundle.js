@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcapacitor_app=self.webpackChunkcapacitor_app||[]).push([[433],{433:(a,e,c)=>{c.r(e),c.d(e,{ExampleWeb:()=>s});var p=c(773);class s extends p.Uw{async echo(a){return console.log("ECHO",a),a}}}}]);

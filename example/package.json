@@ -11,9 +11,12 @@
     "build": "npx webpack"
   },
   "dependencies": {
+    "@capacitor/android": "latest",
     "@capacitor/core": "latest",
+    "@capacitor/dialog": "^1.0.7",
+    "@capacitor/ios": "latest",
     "@capacitor/splash-screen": "latest",
-    "cap": "^0.2.1",
+    "@capacitor/status-bar": "^1.0.8",
     "get-safe-area-capacitor": "file:.."
   },
   "devDependencies": {
