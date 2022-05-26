@@ -13,7 +13,7 @@ npx cap sync
 
 <docgen-index>
 
-* [`GetSafeArea()`](#getsafearea)
+* [`GetSafeArea()`](#Getsafearea)
 
 </docgen-index>
 
