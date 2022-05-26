@@ -1,6 +1,6 @@
 {
   "name": "get-safe-area-capacitor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Retrieves the safe area insets",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
