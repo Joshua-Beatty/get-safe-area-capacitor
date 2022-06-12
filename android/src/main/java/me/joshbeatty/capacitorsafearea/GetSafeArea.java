@@ -19,6 +19,13 @@ public class GetSafeArea {
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P) {
             DisplayCutout displayCutout = activity.getWindow().getDecorView().getRootView().getRootWindowInsets().getDisplayCutout();
+            if(displayCutout == null){
+                ret.put("top", 0);
+                ret.put("bottom", 0);
+                ret.put("left", 0);
+                ret.put("right", 0);
+                return ret;
+            }
             ret.put("top", displayCutout.getSafeInsetTop());
             ret.put("bottom", displayCutout.getSafeInsetBottom());
             ret.put("left", displayCutout.getSafeInsetLeft());

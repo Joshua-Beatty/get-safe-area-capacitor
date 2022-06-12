@@ -1,6 +1,8 @@
 # get-safe-area-capacitor
 
-Retrieves the safe area insets
+Retrieves the safe area insets.
+
+This is **VERY EXPERIMENTAL**, and I can not guarantee that it works on all android and ios device and configurations.
 
 ## Install
 
@@ -11,26 +13,14 @@ npx cap sync
 
 ## API
 
-<docgen-index>
-
-* [`getSafeArea()`](#getsafearea)
-
-</docgen-index>
-
-<docgen-api>
-<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
-
-### getSafeArea()
+### GetSafeArea()
 
 ```typescript
-getSafeArea() => Promise<{ top: number; bottom: number; left: number; right: number; }>
+GetSafeArea() => Promise<{ top: number; bottom: number; left: number; right: number; }>
 ```
-
-**Returns:** <code>Promise&lt;{ top: number; bottom: number; left: number; right: number; }&gt;</code>
 
 --------------------
 
-</docgen-api>
 
 ## Example
 ```javascript
@@ -44,6 +34,7 @@ GetSafeArea().then((e) => {
     document.body.style.marginTop = `${e.top}px`; 
 })
 ```
-## Notes
+## Notes To Ensure the app displays around all cutouts
 1. Remember to add `<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">` to your head.
+1. Remember to add the style `<item name="android:windowLayoutInDisplayCutoutMode"> shortEdges </item>` to your activity. [More Info](https://developer.android.com/guide/topics/display-cutout)
 1. Remember to set the content to go underneath the status bar on android.
