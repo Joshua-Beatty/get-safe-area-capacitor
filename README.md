@@ -2,7 +2,7 @@
 
 Retrieves the safe area insets.
 
-This is **VERY EXPERIMENTAL**, and I can not guarantee that it works on all android and ios device and configurations.
+This is **EXPERIMENTAL**, and I can not guarantee that it works on all android and ios device and configurations.
 
 ## Install
 
